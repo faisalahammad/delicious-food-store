@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
 import React from "react";
 import { FaHamburger, FaPizzaSlice } from "react-icons/fa";
 import { GiChopsticks, GiNoodles } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const Categories = () => {
   return (

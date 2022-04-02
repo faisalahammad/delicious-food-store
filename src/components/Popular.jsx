@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
