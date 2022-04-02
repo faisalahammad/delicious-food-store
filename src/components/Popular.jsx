@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
+
   useEffect(() => {
     getPopular();
   }, []);
@@ -28,7 +29,7 @@ const Popular = () => {
   };
 
   return (
-    <>
+    <div>
       <Wrapper>
         <h3>Popular Picks</h3>
         <Splide
@@ -37,9 +38,7 @@ const Popular = () => {
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "5rem",
-            autoplay: "playing",
-            interval: 3000,
+            gap: "2rem",
           }}
         >
           {popular.map((recipe) => {
@@ -62,12 +61,12 @@ const Popular = () => {
           })}
         </Splide>
       </Wrapper>
-    </>
+    </div>
   );
 };
 
 const Wrapper = styled.div`
-  margin: 4rem 0;
+  margin: 4rem 0rem;
 `;
 
 const Card = styled.div`
@@ -88,7 +87,7 @@ const Card = styled.div`
     position: absolute;
     z-index: 10;
     left: 50%;
-    bottom: 0%;
+    bottom: 20px;
     transform: translate(-50%, 0%);
     color: #fff;
     width: 100%;
@@ -98,6 +97,7 @@ const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
   }
 `;
 
