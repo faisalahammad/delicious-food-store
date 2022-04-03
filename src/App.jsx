@@ -29,7 +29,7 @@ const Logo = styled(Link)`
 `;
 
 const Nav = styled.div`
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

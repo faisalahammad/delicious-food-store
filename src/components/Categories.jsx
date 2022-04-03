@@ -30,7 +30,7 @@ const Categories = () => {
 const List = styled.div`
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 `;
 
 const SLink = styled(NavLink)`
